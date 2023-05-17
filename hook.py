@@ -45,7 +45,6 @@ def hook():
             )
             if message_type == "text":
                 message = messenger.get_message(data)
-                name = messenger.get_name(data)
                 logging.info("Message: %s", message)
                 messenger.send_message(f"Hi {name}, nice to connect with you", mobile)
 
